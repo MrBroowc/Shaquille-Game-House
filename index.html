@@ -1,96 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/MrBroowc/mail/refs/heads/main/assets/img/small%20icon.png" type="image/x-icon">
-    <title>Shaqila FH</title>
+    <title>Shaquille FH</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
     <div class="container">
         <header id="home" class="site-header">
-            <h1 class="brand-title">Shaquille FH</h1>
-            <p class="tagline">Play the game and earn money!</p>
+            <h1 class="brand-title">SGH</h1>
+            <p class="tagline">Shaquille Game House</p>
         </header>
 
         <nav class="site-navigation">
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Register</a></li>
+                <li><a href="#services">Fasilitas</a></li>
+                <li><a href="#contact">Daftar</a></li>
             </ul>
         </nav>
 
         <section id="overview" class="intro-section">
             <div class="intro-content">
-                <h2>Welcome to Shaquille</h2>
-                <p>Shaquille Farm House is a place to increase your income by playing games with a team or solo, don't miss it!</p>
-                <button class="cta-button"><a href="#contact">Register</a></button>
+                <h2>Shaquille Game House</h2>
+                <p>
+                    Shaquille Game House (SGH) adalah salah satu game house yang berada di daerah Bandung. SGH sudah berdiri sejak tahun 2020 yang didirikan oleh Aldian Dermawan. Tujuan pembentukan SGH ini salah satunya adalah menyediakan lapangan pekerjaan bagi mereka
+                    yang memiliki hobi bermain game. <span id="moreText" style="display: none;">Mungkin banyak orang yang tidak tahu bahwa bermain game bisa mendapatkan penghasilan. Di sini, kita membuktikan bahwa bermain game bisa mendapatkan penghasilan. Ayo! bergabung bersama kami!</span>
+                    <a href="javascript:void(0);" id="readMoreLink" onclick="toggleReadMore()" style="color: red;">Selengkapnya...</a>
+                </p>
             </div>
             <div class="intro-image">
-                <img src="asset/hero.jpg" alt="Innovation in action" loading="lazy">
+                <img src="asset/intro.avif" alt="Innovation in action" loading="lazy">
             </div>
         </section>
-
-        <section id="team" class="team-section">
-            <h2>Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="asset/small icon.png" alt="Ganteng Kalem" loading="lazy">
-                    <h3>Ganteng Kalem</h3>
-                    <p>Support System</p>
+        <section id="games" class="games-section">
+            <h2>Game yang dimainkan</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <img src="asset/wow.png" alt="Game 1" loading="lazy">
+                    <h3>World of Warcraft</h3>
                 </div>
-                <div class="team-member">
-                    <img src="asset/Aldian.jpg" alt="Adrian Dermawan" loading="lazy">
-                    <h3>Adrian Dermawan</h3>
-                    <p>Owner of Farm House</p>
+                <div class="game-card">
+                    <img src="https://images.ctfassets.net/j95d1p8hsuun/2uPsvdeUaiCPIXPqpIenWW/981688c48ea8537c87c59375242c5b28/RotAE-logo2.png" alt="Game 2" loading="lazy">
+                    <h3>New World</h3>
                 </div>
-                <div class="team-member">
-                    <img src="asset/manto.jpg" alt="Rizky Rismanto" loading="lazy">
-                    <h3>Rizky Rismanto</h3>
-                    <p>Manager & Administrator</p>
+                <div class="game-card">
+                    <img src="https://images.ctfassets.net/umhrp0op95v1/7CYA9HiMvQT4eR6nuEdoai/c2a4545793c56715f05bd24090401bd8/LoLA-logo2.png" alt="Game 3" loading="lazy">
+                    <h3>Lost Ark</h3>
+                </div>
+                <div class="game-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/6/6e/Project_TL_logo.png" alt="Game 4" loading="lazy">
+                    <h3>Throne and Liberty</h3>
                 </div>
             </div>
         </section>
-
+        
         <section id="services" class="services-section">
-            <h2>Our Facilities</h2>
+            <h2>Fasilitas</h2>
             <div class="service-cards">
                 <div class="service-card">
                     <img src="asset/mess.png" alt="Room or Mess" loading="lazy">
-                    <h3>Room or Mess</h3>
-                    <p>We provide beds for those of you who are far from home.</p>
+                    <h3>Tempat Tidur</h3>
+                    <p>Kasur dan bantal sudah di sediakan untuk beristirahat.</p>
                 </div>
                 <div class="service-card">
                     <img src="asset/food.png" alt="Foods" loading="lazy">
-                    <h3>Foods</h3>
-                    <p>We provide rice and eggs for day and night.</p>
+                    <h3>Makan</h3>
+                    <p>Disediakan makan dan minum setiap harinya.</p>
                 </div>
                 <div class="service-card">
                     <img src="asset/computer.png" alt="Computer" loading="lazy">
                     <h3>Computer</h3>
-                    <p>Computers, mouse, and keyboard are available. (Does not provide headsets and other accessories)</p>
+                    <p>Komputer, Mouse, dan Keyboard sudah disediakan untuk anda.</p>
                 </div>
                 <div class="service-card">
                     <img src="asset/wifi.png" alt="Wifi" loading="lazy">
                     <h3>Wifi</h3>
-                    <p>We also provide free wifi with a speed of 100mbps.</p>
+                    <p>Menyediakan WiFi gratis dengan kecepatan 100mbps.</p>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="contact-section">
-            <h2>Apply to join</h2>
-            <p>If you are interested in joining 20+ other people, you can register in Discord.</p>
-            <a href="https://discord.gg/VD25ghEf24" target=”_blank” class="contact-button">Register</a>
+            <h2>Pendaftaran</h2>
+            <p>Untuk yang berminat dan serius ingin bekerja bisa mendaftar via Discord kami dibawah ini.</p>
+            <a href="https://discord.gg/VD25ghEf24" target="_blank" class="contact-button">Daftar</a>
         </section>
-
+        
+        <section id="team" class="team-section">
+            <h2>Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="asset/Aldian.jpg" alt="Adrian Dermawan" loading="lazy">
+                    <h3>Adrian Dermawan</h3>
+                    <p>Owner</p>
+                </div>
+                <div class="team-member">
+                    <img src="asset/manto.jpg" alt="Rizky Rismanto" loading="lazy">
+                    <h3>Rismanto</h3>
+                    <p>Chief Executive Officer</p>
+                </div>
+                <div class="team-member">
+                    <img src="asset/bandits.jpg" alt="Ganteng Kalem" loading="lazy">
+                    <h3>Da&</h3>
+                    <p>Chief Operating Officer</p>
+                </div>
+            </div>
+        </section>
+        <section id="location" class="location-section">
+            <h2>Lokasi Kami</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.53977953413676!2d107.66811209303006!3d-6.933979050054942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e80287d3197f%3A0xff1fd685892ca2b!2sGg.%20At-Taufiq%20Jl.%20Parakan%20Saat%20No.1%2C%20Cisaranten%20Endah%2C%20Kec.%20Arcamanik%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040292!5e0!3m2!1sen!2sid!4v1736569515637!5m2!1sen!2sid" 
+                    width="400" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
         <footer class="site-footer">
-            <p>&copy; 2025 Shaquille FH. All Rights Reserved.</p>
+            <p>&copy; 2025 Shaquille | Contact:<a href="https://wa.me/62857200025617" style="color: rgb(0, 255, 0);" target="_blank"> WhatsApp</a>. |  Beta version</p>
         </footer>
     </div>
 </body>
