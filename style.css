@@ -1,10 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body {
     padding-top: 60px;
     font-family: 'Nunito', sans-serif;
-    margin: 0;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    background-size: 400% 400%;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.ibb.co/4pp3cnL/hero.jpg');
+    background-size: cover;
     background-attachment: fixed;
+    filter: blur(5px);
+    z-index: -1;
 }
 
 @keyframes gradientText {
@@ -25,16 +42,57 @@ a {
     color: #ffffff;
 }
 
+h2 {
+    font-size: 30px;
+    background: linear-gradient(135deg, #88f7ff, #f525fc);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 2s ease infinite;
+}
+
+img {
+    user-drag: none; /* Disable image dragging in WebKit browsers */
+    user-select: none; /* Disable text selection */
+    -webkit-user-drag: none; /* Disable image dragging in Safari */
+    -webkit-user-select: none; /* Disable text selection in Safari */
+    -moz-user-select: none; /* Disable text selection in Firefox */
+    -ms-user-select: none; /* Disable text selection in Internet Explorer/Edge */
+}
+
 .container {
+    border-radius: 5px;
+    background-color: rgba(119, 0, 255, 0.486);
+    /* background: linear-gradient(135deg, #6b11cb83, #2574fc80); */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 80%;
     margin: 0 auto;
     max-width: 1200px;
 }
 
 .site-header {
+    padding: 10px;
     text-align: center;
-    background: url('asset/hero.jpg') no-repeat center center/cover;
-    padding: 2rem 1rem;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.site-header .brand-logo {
+    animation: pulse 2s infinite;
+    width: 250px;
+    height: auto;
+}
+
+.site-header .tagline {
+    font-size: 14px;
+    margin: 5px 0;
 }
 
 .site-header::before {
@@ -68,13 +126,16 @@ a {
 }
 
 .site-navigation {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     max-width: 1200px;
     width: 80%;
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: #ff4b2b93;
+    background: linear-gradient(135deg, #6b11cb83, #2574fc80);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -112,7 +173,7 @@ a {
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    background: linear-gradient(135deg, #6b11cb83, #2574fc80);
+    /* background: linear-gradient(135deg, #6b11cb83, #2574fc80); */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -121,19 +182,9 @@ a {
     text-align: center;
 }
 
-.intro-content h2 {
-    font-size: 2rem;
-    color: #ff4b2b;
-    background: linear-gradient(135deg, #ffffff, #fc3e25);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientText 5s ease infinite;
-}
-
 .intro-content p {
     color: #e0e0e0;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 1rem 0;
     line-height: 1.5;
 }
@@ -153,18 +204,7 @@ a {
 .games-section {
     padding: 4rem 2rem;
     text-align: center;
-    background: linear-gradient(135deg, #6b11cb83, #2574fc80);
-}
-
-.games-section h2 {
-    font-size: 2.5rem;
-    color: #ff4b2b;
-    margin-bottom: 2rem;
-    background: linear-gradient(135deg, #ffffff, #fc3e25);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientText 5s ease infinite;
+    /* background: linear-gradient(135deg, #6b11cb83, #2574fc80); */
 }
 
 .games-grid {
@@ -175,8 +215,7 @@ a {
 }
 
 .game-card {
-    background: rgba(42, 42, 42, 0.36);
-    border: 1px solid #444;
+    background: #ffffff2d;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -188,13 +227,13 @@ a {
     width: 100%;
     height: 200px;
     border-bottom: 1px solid #ffffff;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .game-card h3 {
     font-size: 1.3rem;
     margin: 0.5rem 0;
-    color: #ff4b2b;
+    color: #ffa14a;
 }
 
 .game-card:hover {
@@ -204,18 +243,7 @@ a {
 .team-section {
     padding: 4rem 2rem;
     text-align: center;
-    background: linear-gradient(135deg, #6b11cb83, #2574fc80);
-}
-
-.team-section h2 {
-    font-size: 2.5rem;
-    color: #ff4b2b;
-    margin-bottom: 2rem;
-    background: linear-gradient(135deg, #ffffff, #fc3e25);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientText 5s ease infinite;
+    /* background: linear-gradient(135deg, #6b11cb83, #2574fc80); */
 }
 
 .team-grid {
@@ -230,17 +258,19 @@ a {
     text-align: center;
     max-width: 300px;
     transition: transform 0.3s;
-    background: #ffffff1f;
+    background: #ffffff2d;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .team-member:hover {
+    animation: pulse 3s infinite;
     transform: scale(1.05);
 }
 
 .team-member img {
+    object-fit: contain;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -253,23 +283,13 @@ a {
     color: #f4f804fa;
 }
 .team-member p {
+    font-size: 1.1rem;
     color: #e0e0e0;
 }
 .services-section {
     text-align: center;
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, #6b11cb83, #2574fc80);
-}
-
-.services-section h2 {
-    font-size: 2.5rem;
-    color: #ff4b2b;
-    margin-bottom: 2rem;
-    background: linear-gradient(135deg, #ffffff, #fc3e25);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientText 5s ease infinite;
+    /* background: linear-gradient(135deg, #6b11cb83, #2574fc80); */
 }
 
 .service-cards {
@@ -280,8 +300,7 @@ a {
 }
 
 .service-card {
-    background: rgba(42, 42, 42, 0.36);
-    border: 1px solid #444;
+    background: #ffffff2d;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -293,16 +312,17 @@ a {
     width: 100%;
     height: 200px;
     border-bottom: 1px solid #ffffff;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .service-card h3 {
     font-size: 1.3rem;
     margin: 0.5rem 0;
-    color: #ff4b2b;
+    color: #ffa14a;
 }
 
 .service-card p {
+    font-size: 1.1rem;
     margin: 0.5rem 0;
     color: #e0e0e0;
     line-height: 1.6;
@@ -313,20 +333,10 @@ a {
 }
 
 .location-section {
+    border-radius: 5px;
     padding: 20px;
-    background: linear-gradient(135deg, #6b11cb83, #2574fc80);
+    background: #ffffff2d;
     text-align: center;
-}
-
-.location-section h2 {
-    margin-bottom: 20px;
-    color: #ff4b2b;
-    margin-bottom: 2rem;
-    background: linear-gradient(135deg, #ffffff, #fc3e25);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientText 5s ease infinite;
 }
 
 .location-section iframe {
@@ -334,43 +344,54 @@ a {
     border-radius: 8px;
 }
 
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 .site-footer {
     text-align: center;
     padding: 1px;
     background: #00000042;
     color: #fff;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .contact-section {
     text-align: center;
     padding: 2rem;
-    background: rgba(42, 42, 42, 0.36);
+    background: #ffffff2d;
     margin-top: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.contact-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #ff4b2b;
-    background: linear-gradient(135deg, #ffffff, #fc3e25);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientText 5s ease infinite;
+.contact-logo {
+    width: 200px;
+    height: auto;
 }
 
 .contact-section p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 1.5rem;
-    color: #e0e0e0;
+    color: #ffffff;
 }
 
 .contact-button {
-    background: #ff4b2b;
-    color: #fff;
+    background: #ffa14a;
+    color: #000000;
     padding: 0.8rem 1.5rem;
     border: none;
     border-radius: 5px;
@@ -381,7 +402,7 @@ a {
 }
 
 .contact-button:hover {
-    background: #ff416c;
+    background: #ffa14a83;
     transform: translateY(-2px);
 }
 
@@ -402,11 +423,34 @@ a {
     }
     
     .team-grid {
-        flex-direction: row;
-        flex-wrap: wrap;
     }
 
     .service-cards {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .location-section {
+        padding: 2rem 1rem;
+    }
+
+    .location-section h2 {
+        font-size: 2rem;
+    }
+
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .location-section {
+        padding: 1rem 0.5rem;
+    }
+
+    .location-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .location-card {
+        padding: 0.5rem;
     }
 }
