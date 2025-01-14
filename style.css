@@ -63,7 +63,7 @@ img {
 }
 
 .site-header .brand-logo {
-    animation: pulse 2s infinite;
+    animation: pulse 5s infinite;
     width: 250px;
     height: auto;
 }
