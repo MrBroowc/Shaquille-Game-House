@@ -12,3 +12,16 @@ function toggleReadMore() {
         readMoreLink.setAttribute("aria-expanded", "false");
     }
 }
+
+fetch("updates.json")
+    .then((response) => response.json())
+    .then((messages) => {
+        const updatesDiv = document.getElementById("updates");
+        messages.forEach((message) => {
+            const updateDiv = document.createElement("div");
+            updateDiv.classList.add("update");
+            updateDiv.innerHTML = `<p class="date">${message.date}</p><p>${message.text}</p>`;
+            updatesDiv.appendChild(updateDiv);
+        });
+    })
+    .catch((error) => console.error("Error loading updates:", error));
