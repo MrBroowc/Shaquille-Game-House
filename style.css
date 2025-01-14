@@ -46,13 +46,16 @@ h2 {
     font-size: 30px;
     background: linear-gradient(135deg, #88f7ff, #f525fc);
     background-size: 200% 200%;
+    background-clip: text;
+    background-clip: text;
+    background-clip: text;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientText 2s ease infinite;
 }
 
 img {
-    user-drag: none; /* Disable image dragging in WebKit browsers */
     user-select: none; /* Disable text selection */
     -webkit-user-drag: none; /* Disable image dragging in Safari */
     -webkit-user-select: none; /* Disable text selection in Safari */
@@ -422,9 +425,6 @@ img {
         margin-top: 0;
     }
     
-    .team-grid {
-    }
-
     .service-cards {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
@@ -453,4 +453,43 @@ img {
     .location-card {
         padding: 0.5rem;
     }
+}
+
+.updates-section {
+    max-width: 600px;
+    background: #ffffff2d;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.updates-section h1 {
+    font-size: 2rem;
+    color: #eaff2e;
+    margin-bottom: 10px;
+}
+
+.updates-section p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+.update {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.update:last-child {
+    border-bottom: none;
+}
+
+.update .date {
+    font-weight: bold;
+}
+
+.update p {
+    font-weight: bold;
+    margin: 0;
+    font-size: 16px;
 }
