@@ -6,6 +6,7 @@ body {
 }
 
 body {
+  background-color: #000000;
   position: relative;
   padding-top: 60px;
   font-family: "Nunito", sans-serif;
