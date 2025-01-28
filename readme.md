@@ -1,9 +1,9 @@
 
 > [!NOTE]
-> Crearted by Bandis
+> Created by Bandis
   <p>
     <a href="https://bndts.netlify.app" target="_blank">
-      <img width="100%" src="https://bndts.netlify.app/a600e61421464d2b9408f94a884d118c3.png"></a>
+      <img width="50%" src="https://bndts.netlify.app/a600e61421464d2b9408f94a884d118c3.png"></a>
   </p>
 
 Aimmy is a universal AI-Based Aim Alignment Mechanism developed by BabyHamsta, MarsInsanity & Taylor to make gaming more accessible for users who have difficulty aiming.
