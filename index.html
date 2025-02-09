@@ -28,7 +28,7 @@
 
     <title>Shaquille Game House</title>
 
-    <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css" /> -->
+    <!-- Links -->
     <link rel="shortcut icon" href="./assets/logo/SGH-small.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/tailwind-build.css">
     <link rel="stylesheet" href="css/index.css" />
@@ -36,20 +36,14 @@
   </head>
   <body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-black tw-text-white">
     <header class="tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] lg:tw-justify-around">
-      <a class="tw-h-[50px] tw-w-[50px] tw-p-[4px]" href="">
-        <img src="./assets/logo/SGH-small.png" alt="Shaquille" class="tw-object tw-h-full tw-w-full" />
-      </a>
       <div class="collapsible-header animated-collapse max-lg:tw-shadow-md" id="collapsed-header-items">
-        <div class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center">
+        <div class="tw-flex tw-h-full tw-w-max tw-gap-3 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center">
+          <a class="tw-h-[40px] tw-w-[40px] tw-p-[4px]" href="">
+            <img src="./assets/logo/home.png" alt="Shaquille" class="tw-object tw-h-full tw-w-full" />
+          </a>
           <a class="header-links" href="#fasilitas"> Fasilitas </a>
           <a class="header-links" href="#game"> Game </a>
           <a class="header-links" href="#bantuan"> Bantuan </a>
-        </div>
-        <div class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">
-          <a href="#daftar" aria-label="signup" class="tw-rounded-full tw-bg-white tw-px-3 tw-py-2 tw-text-black tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2">
-            <span>Daftar</span>
-            <i class="bi bi-arrow-right"></i>
-          </a>
         </div>
       </div>
       <button class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white lg:tw-hidden" onclick="toggleHeader()" aria-label="menu" id="collapse-btn"></button>
@@ -155,11 +149,8 @@
           </div>
         </div>
         <div class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4">
-          <h3 class="tw-text-4xl tw-font-medium max-md:tw-text-2xl"> Bekerja dan bermain game </h3>
+          <h3 class="tw-text-4xl tw-font-medium max-md:tw-text-2xl"> Main Game Tapi Dibayar? </h3>
           <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
-            <h4 class="tw-text-xl tw-font-medium">
-              <i class="bi bi-check-all !tw-text-2xl"></i> Kenapa tidak?
-            </h4>
             <span class="tw-text-lg tw-text-gray-300 max-md:tw-text-base"> Bekerja sambil bermain game? Kini, banyak gamer yang berhasil mengubah hobi mereka menjadi sumber penghasilan yang menguntungkan. Dengan dedikasi dan konsistensi, bermain game bisa menjadi peluang karier yang serius dan menjanjikan.</span>
           </div>
         </div>
@@ -168,7 +159,7 @@
     <section class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6">
       <div class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10">
         <div class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4">
-          <h3 class="tw-text-4xl tw-font-medium max-md:tw-text-2xl"> Keuntungan </h3>
+          <h3 class="tw-text-4xl tw-font-medium max-md:tw-text-2xl"> Kenapa tidak? </h3>
           <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
             <span class="tw-text-lg tw-text-gray-300 max-md:tw-text-base"> Dengan ketekunan dan strategi yang tepat, bermain game bukan lagi sekadar hiburan, tapi juga peluang untuk menambah penghasilan. </span>
           </div>
@@ -248,7 +239,7 @@
             <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
           </div>
           <div class="content"> Untuk anda yang ingin mendaftar, silahkan mendaftar via <a href="https://discord.com/invite/2mzwPHtyJe" target="_blank" class="tw-underline"> Discord</a> atau <a href="https://api.whatsapp.com/send/?phone=6285720025617&text&type=phone_number&app_absent=0" target="_blank" class="tw-underline"> WhatsApp</a> kami.
-        <br> (untuk pendaftaran tidak setiap hari ada, mohon untuk menanyakan ketersediaan terlebih dahulu.)
+        <br> <p style="font-style: italic; color: rgba(255, 0, 0, 0.692);">(Pendaftaran tidak setiap hari ada, mohon untuk menanyakan ketersediaan terlebih dahulu.)</p>
         </div>
         </div>
 
@@ -279,7 +270,7 @@
       </div>
       <div class="tw-mt-20 tw-flex tw-flex-col tw-place-items-center tw-gap-4">
         <div class="tw-text-3xl max-md:tw-text-2xl"> Ada pertanyaan lain? </div>
-        <a href="https://api.whatsapp.com/send/?phone=6285720025617&text&type=phone_number&app_absent=0" target="_blank" class="btn !tw-rounded-full !tw-border-[1px] !tw-border-solid !tw-border-gray-300 !tw-bg-transparent tw-transition-colors tw-duration-[0.3s]"><p class="bi bi-whatsapp"> WhatsApp </p></a>
+        <a href="https://api.whatsapp.com/send/?phone=6285720025617&text&type=phone_number&app_absent=0" target="_blank" class="btn !tw-rounded-full !tw-border-[1px] !tw-border-solid !tw-border-gray-300 !tw-bg-[#25d366] tw-transition-colors tw-duration-[0.3s]"><p class="bi bi-whatsapp"> WhatsApp </p></a>
       </div>
     </section>
 
@@ -290,7 +281,7 @@
           <div class="tw-text-gray-300">Shaquille Game House</div>
         </div>
         <div class="tw-flex tw-h-[60px] tw-place-items-center tw-gap-2 tw-overflow-hidden tw-p-2">
-          <a class="btn !tw-rounded-full !tw-border-[1px] !tw-border-solid !tw-border-gray-300 !tw-bg-transparent tw-transition-colors tw-duration-[0.3s]" href="https://discord.com/invite/2mzwPHtyJe" target="_blank"><p class="bi bi-discord"> Discord </p></a>
+          <a class="btn tw-bg-[#7e22ce85] tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]" href="https://discord.com/invite/2mzwPHtyJe" target="_blank"><p class="bi bi-discord"> Discord </p></a>
         </div>
       </div>
     </section>
