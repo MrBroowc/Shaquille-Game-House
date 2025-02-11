@@ -65,7 +65,7 @@ gsap.to(".reveal-up", {
 })
 
 gsap.to("#dashboard", {
-    boxShadow: "0px 15px 25px -5px rgb(206, 160, 34)",
+    // boxShadow: "0px 15px 25px -5px rgb(206, 160, 34)",
     duration: 0.3,
     scrollTrigger: {
         trigger: "#hero-section",
