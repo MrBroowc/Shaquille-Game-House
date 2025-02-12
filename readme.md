@@ -1,4 +1,6 @@
-<img align="left" height="500" src="https://shaquille.netlify.app/assets/logo/SGH-small.png"  />
+<div align="center">
+  <a href="https://shaquille.netlify.app/" target="_blank"><img height="500" src="https://shaquille.netlify.app/assets/logo/SGH-small.png"  /></a>
+</div>
 
 ###
 
