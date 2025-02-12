@@ -1,7 +1,7 @@
 {
-    "name": "landing-pages",
+    "name": "Shaquille-Game-House",
     "version": "1.0.0",
-    "description": "Shaquille Game House",
+    "description": "Shaquille Game House (SGH) adalah salah satu farm house yang terletak di Bandung, didirikan oleh Aldian Dermawan pada tahun 2020.",
     "main": "index.js",
     "scripts": {
       "start:tailwind": "cross-env NODE_ENV=development tailwindcss --postcss -i tailwind.css -o tailwind-runtime.css -w",
